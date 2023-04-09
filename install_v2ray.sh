@@ -12,7 +12,9 @@ PLAIN='\033[0m'
 colorEcho() {
     echo -e "${1}${@:2}${PLAIN}"
 }
-
+print_ok() {
+  echo -e "${OK} ${Blue} $1 ${Font}"
+}
 # 以下网站是随机从Google上找到的无广告小说网站，不喜欢请改成其他网址，以http或https开头
 # 搭建好后无法打开伪装域名，可能是反代小说网站挂了，请在网站留言，或者Github发issue，以便替换新的网站
 SITES=(
