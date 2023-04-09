@@ -1782,7 +1782,8 @@ showInfo() {
             echo -e "   ${BLUE}伪装类型(type)：${PLAIN}${RED}none$PLAIN"
             echo -e "   ${BLUE}伪装域名/主机名(host)/SNI/peer名称：${PLAIN}${RED}${domain}${PLAIN}"
             echo -e "   ${BLUE}底层安全传输(tls)：${PLAIN}${RED}XTLS${PLAIN}"
-	    print_ok "vless://${uid}@${domain}:${port}?security=xtls&flow=$flow#huxuezhang-${IP}"
+	    echo -e "	${BLUE}URL 链接 (VLESS + TCP + TLS)
+	    echo -e "	${RED}vless://${uid}@${domain}:${port}?security=xtls&flow=$flow#huxuezhang-${IP}"
         elif [[ "$ws" = "false" ]]; then
             echo -e "   ${BLUE}IP(address):  ${PLAIN}${RED}${IP}${PLAIN}"
             echo -e "   ${BLUE}端口(port)：${PLAIN}${RED}${port}${PLAIN}"
@@ -1793,6 +1794,8 @@ showInfo() {
             echo -e "   ${BLUE}伪装类型(type)：${PLAIN}${RED}none$PLAIN"
             echo -e "   ${BLUE}伪装域名/主机名(host)/SNI/peer名称：${PLAIN}${RED}${domain}${PLAIN}"
             echo -e "   ${BLUE}底层安全传输(tls)：${PLAIN}${RED}TLS${PLAIN}"
+	    echo -e "	${BLUE}URL 链接 (VLESS+WS+TLS)
+	    echo -e "	${RED}vless://${uid}@${domain}:${port}?security=tls&flow=$flow#huxuezhang-${IP}"
         else
             echo -e "   ${BLUE}IP(address): ${PLAIN} ${RED}${IP}${PLAIN}"
             echo -e "   ${BLUE}端口(port)：${PLAIN}${RED}${port}${PLAIN}"
@@ -1822,14 +1825,10 @@ menu() {
     clear
     echo "#############################################################"
     echo -e "#                   ${RED}v2ray一键安装脚本${PLAIN}                       #"
-    echo -e "# ${GREEN}作者${PLAIN}: 网络跳越(hijk)                                      #"
-    echo -e "# ${GREEN}维护${PLAIN}: ifeng                                               #"
-    echo -e "# ${GREEN}网址${PLAIN}: https://www.hicairo.com                             #"
-    echo -e "# ${GREEN}TG群${PLAIN}: https://t.me/HiaiFeng                               #"
-    echo -e "#                                                           #"
-    echo -e "#  向${GREEN}网络跳越${PLAIN}致敬！！！                                     #"
-    echo -e "#  该脚本原作者为${GREEN}网络跳越${PLAIN}，好像已经停止维护。该脚本默认     #"	
-    echo -e "#  支持BBR加速，支持ipv6连接。目前由${GREEN}ifeng${PLAIN}修改Bug进行维护。  #"	
+    echo -e "# ${GREEN}作者${PLAIN}: 胡学长                                      #"
+    echo -e "# ${GREEN}维护${PLAIN}: huxuehzang                                               #"
+    echo -e "# ${GREEN}网址${PLAIN}: https://www.52pojiee.com                             #"
+    echo -e "# ${GREEN}微信${PLAIN}: Huxuezhang01                             #"
     echo -e "#                                                           #"	
     echo "#############################################################"
 
