@@ -1,7 +1,6 @@
-#!/usr/bin/env bash
 #!/bin/bash
 # v2ray一键安装脚本
-# Modify by huxuezhang<https://www.52pojiee.com>
+# Modify by ifeng<https://www.hicairo.com>
 
 RED="\033[31m"      # Error message
 GREEN="\033[32m"    # Success message
@@ -12,9 +11,7 @@ PLAIN='\033[0m'
 colorEcho() {
     echo -e "${1}${@:2}${PLAIN}"
 }
-print_ok() {
-  echo -e "${OK} ${Blue} $1 ${Font}"
-}
+
 # 以下网站是随机从Google上找到的无广告小说网站，不喜欢请改成其他网址，以http或https开头
 # 搭建好后无法打开伪装域名，可能是反代小说网站挂了，请在网站留言，或者Github发issue，以便替换新的网站
 SITES=(
@@ -1821,10 +1818,14 @@ menu() {
     clear
     echo "#############################################################"
     echo -e "#                   ${RED}v2ray一键安装脚本${PLAIN}                       #"
-    echo -e "# ${GREEN}作者${PLAIN}: 胡学长                                      #"
-    echo -e "# ${GREEN}维护${PLAIN}: huxuehzang                                               #"
-    echo -e "# ${GREEN}网址${PLAIN}: https://www.52pojiee.com                             #"
-    echo -e "# ${GREEN}微信${PLAIN}: Huxuezhang01                             #"
+    echo -e "# ${GREEN}作者${PLAIN}: 网络跳越(hijk)                                      #"
+    echo -e "# ${GREEN}维护${PLAIN}: ifeng                                               #"
+    echo -e "# ${GREEN}网址${PLAIN}: https://www.hicairo.com                             #"
+    echo -e "# ${GREEN}TG群${PLAIN}: https://t.me/HiaiFeng                               #"
+    echo -e "#                                                           #"
+    echo -e "#  向${GREEN}网络跳越${PLAIN}致敬！！！                                     #"
+    echo -e "#  该脚本原作者为${GREEN}网络跳越${PLAIN}，好像已经停止维护。该脚本默认     #"	
+    echo -e "#  支持BBR加速，支持ipv6连接。目前由${GREEN}ifeng${PLAIN}修改Bug进行维护。  #"	
     echo -e "#                                                           #"	
     echo "#############################################################"
 
