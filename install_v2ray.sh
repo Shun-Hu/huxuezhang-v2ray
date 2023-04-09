@@ -1785,7 +1785,7 @@ showInfo() {
 	    echo -e "	${BLUE}URL 链接 (VLESS + TCP + TLS)
 	    echo -e "	${RED}vless://${uid}@${domain}:${port}?security=xtls&flow=$flow#huxuezhang-${IP}"
         elif [[ "$ws" = "false" ]]; then
-            echo -e "   ${BLUE}IP(address):  ${PLAIN}${RED}${IP}${PLAIN}"
+            echo -e "   ${BLUE}IP(address)：${PLAIN}${RED}${IP}${PLAIN}"
             echo -e "   ${BLUE}端口(port)：${PLAIN}${RED}${port}${PLAIN}"
             echo -e "   ${BLUE}id(uuid)：${PLAIN}${RED}${uid}${PLAIN}"
             echo -e "   ${BLUE}流控(flow)：${PLAIN}$RED$flow${PLAIN}"
