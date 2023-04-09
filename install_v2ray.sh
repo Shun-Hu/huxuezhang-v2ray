@@ -1792,6 +1792,8 @@ showInfo() {
             echo -e "   ${BLUE}伪装类型(type)：${PLAIN}${RED}none$PLAIN"
             echo -e "   ${BLUE}伪装域名/主机名(host)/SNI/peer名称：${PLAIN}${RED}${domain}${PLAIN}"
             echo -e "   ${BLUE}底层安全传输(tls)：${PLAIN}${RED}XTLS${PLAIN}"
+	    echo -e "	${BLUE}URL 链接 (VLESS + TCP + TLS)
+	    echo -e "	${RED}vless://${uid}@${domain}:${port}?security=xtls&flow=$flow#huxuezhang-${IP}"
         elif [[ "$ws" = "false" ]]; then
             echo -e "   ${BLUE}IP(address):  ${PLAIN}${RED}${IP}${PLAIN}"
             echo -e "   ${BLUE}端口(port)：${PLAIN}${RED}${port}${PLAIN}"
@@ -1802,6 +1804,8 @@ showInfo() {
             echo -e "   ${BLUE}伪装类型(type)：${PLAIN}${RED}none$PLAIN"
             echo -e "   ${BLUE}伪装域名/主机名(host)/SNI/peer名称：${PLAIN}${RED}${domain}${PLAIN}"
             echo -e "   ${BLUE}底层安全传输(tls)：${PLAIN}${RED}TLS${PLAIN}"
+	    echo -e "	${BLUE}URL 链接 (VLESS+WS+TLS)
+	    echo -e "	${RED}vless://${uid}@${domain}:${port}?security=tls&flow=$flow#huxuezhang-${IP}"
         else
             echo -e "   ${BLUE}IP(address): ${PLAIN} ${RED}${IP}${PLAIN}"
             echo -e "   ${BLUE}端口(port)：${PLAIN}${RED}${port}${PLAIN}"
