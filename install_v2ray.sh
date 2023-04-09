@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 #!/bin/bash
 # v2ray一键安装脚本
 # Modify by huxuezhang<https://www.52pojiee.com>
