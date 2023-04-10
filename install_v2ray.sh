@@ -1795,7 +1795,7 @@ showInfo() {
 	    echo -e "	${RED}URL 链接 (VLESS + TCP + XTLS)"
 	    echo -e "${GREEN}vless://${uid}@${domain}:${port}?security=xtls&flow=$flow#huxuezhang-${IP}"
 	    echo -e "	${RED}URL 二维码 (VLESS + TCP + XTLS) （请在浏览器中访问）"
-	    echo -e "${GREEN}https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=vless://${uid}@${domain}:${port}?security=xtls&flow=$flow#huxuezhang-${IP}"
+	    echo -e "${GREEN}https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=vless://${uid}@${domain}:${port}?security=xtls&&26%flow=$flow23%huxuezhang-${IP}"
         elif [[ "$ws" = "false" ]]; then
             echo -e "   ${BLUE}IP(address):  ${PLAIN}${RED}${IP}${PLAIN}"
             echo -e "   ${BLUE}端口(port)：${PLAIN}${RED}${port}${PLAIN}"
@@ -1809,7 +1809,7 @@ showInfo() {
 	    echo -e "	${RED}URL 链接 (VLESS + WS + TLS)"
 	    echo -e "${GREEN}vless://${uid}@${domain}:${port}?security=tls&flow=$flow#huxuezhang-${IP}"
 	    echo -e "	${RED}URL 二维码 (VLESS + WS + TLS) （请在浏览器中访问）"
-	    echo -e "${GREEN}https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=vless://${uid}@${domain}:${port}?security=xtls&flow=$flow#huxuezhang-${IP}"
+	    echo -e "${GREEN}https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=vless://${uid}@${domain}:${port}?security=xtls&26%flow=$flow23%huxuezhang-${IP}"
         else
             echo -e "   ${BLUE}IP(address): ${PLAIN} ${RED}${IP}${PLAIN}"
             echo -e "   ${BLUE}端口(port)：${PLAIN}${RED}${port}${PLAIN}"
